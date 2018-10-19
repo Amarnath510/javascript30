@@ -22,7 +22,7 @@
 
     const promise = fetch(endpoint);
     promise.then(blob => { return blob.json(); })
-           .then(response => cities.push(...response)); // ... is called spread => which appends data as array
+           .then(response => cities.push(...response)); // ... is called spread => Kind of like flatMap. 
 
     // Add on key press event to searh input box
     const searchInput = document.querySelector('.search');
