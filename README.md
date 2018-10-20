@@ -11,7 +11,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-5: Crazy Animations
 - [x] Day-6: My best one, Typeahead
 - [x] Day-7: More ES6 Array functions
-- [ ] Day-8:
+- [x] Day-8: Canvas
 - [ ] Day-9:
 - [ ] Day-10:
 - [ ] Day-11:
@@ -35,3 +35,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [ ] Day-29:
 - [ ] Day-30:
 
+## Reference
+- https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D (Canvas Doc)
