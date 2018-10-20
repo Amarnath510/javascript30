@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      const p = document.querySelector('p');
+      p.style.color = '#BADA55';
+      p.style.fontSize = '50px';
+    }
+
+    // =======================
+    //  Regular
+    // =======================
+    console.log('Logger Demo');
+
+    // =======================
+    //  Info
+    // =======================
+    // NOTE: This is same as log => https://bugs.chromium.org/p/chromium/issues/detail?id=714235
+    console.info('Info Demo');
+
+    // =======================
+    //  warning!
+    // =======================
+    console.warn('Warning Demo');
+
+    // =======================
+    //  Error :|
+    // =======================
+    console.error('Error Demo');
+
+    // =======================
+    // Interpolated
+    // =======================
+    console.log(`I am using ${dogs[0].name}`); // ES6 feature backticks
+
+    // =======================
+    // Styled
+    // =======================
+    // We can style in console. Using "%c" we can add styling
+    console.log('%c Text is styled', 'font-size: 20px; background-color: orangered;');
+
+    // =======================
+    // Testing
+    // =======================
+    // Assert prints when something is failed
+    console.assert(1 === 1, 'Does not print');
+    console.assert(1 === 2, 'Prints');
+    const para = document.querySelector('p');
+    console.assert(para.classList.contains("ouch"), 'Para Element does not contain ouch class');
+
+    // =======================
+    // Clearing
+    // =======================
+    // console.clear(); // Will clear the console
+    // Viewing DOM Elements
+    const p = document.querySelector('p');
+    console.log(p); // Will only Print element and not its methods
+    console.dir(p); // Displays all properties & methods.
+
+    // =======================
+    // Grouping together
+    // =======================
+    // We can group information
+    dogs.forEach(dog => {
+      console.group(`${dog.name}`);
+      // Here you can write the information of the dog.
+      console.log(`${dog.age}`);
+      console.log(`something about ${dog.name}`);
+      console.groupEnd(`${dog.name}`); // Group should be ended with same name
+    });
+
+    // =======================
+    // Counting - Increments count if the same word is occured
+    // =======================
+    console.count('amarnath');
+    console.count('amarnath');
+    console.count('chandana');
+    console.count('amarnath');
+    console.count('chandana');
+
+    // =======================
+    // Timing - Used to calculate the time taken for fetching/processing something
+    // =======================
+    const callContext = 'fetch amarnath510 details'
+    console.time(`${callContext}`)
+    fetch('https://api.github.com/users/amarnath510')
+      .then(blob => blob.json())
+      .then(resp => {
+        console.timeEnd(`${callContext}`); // Should have same content as time above
+        console.log(resp);
+      });
+
+    // =======================
+    // Table
+    // =======================
+    console.table(dogs);
+
+  </script>
+</body>
+</html>
