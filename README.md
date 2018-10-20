@@ -11,8 +11,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-5: Crazy Animations
 - [x] Day-6: My best one, Typeahead
 - [x] Day-7: More ES6 Array functions
-- [x] Day-8: Canvas
-- [ ] Day-9:
+- [x] Day-8: 2D Canvas
+- [x] Day-9: Dev Tools
 - [ ] Day-10:
 - [ ] Day-11:
 - [ ] Day-12:
