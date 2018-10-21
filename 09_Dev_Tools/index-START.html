@@ -29,6 +29,13 @@
     console.info('Info Demo');
 
     // =======================
+    //  Trace - You will get info about which method and from which line it is called
+    // =======================
+    const deleteMe = () => console.trace('Trace Demo');
+    deleteMe();
+    deleteMe();
+
+    // =======================
     //  warning!
     // =======================
     console.warn('Warning Demo');
@@ -105,6 +112,67 @@
     // =======================
     console.table(dogs);
 
+    // =======================
+    // Object Destructuring
+    // =======================
+    const turtle = {
+        name: 'Bob',
+        legs: 4,
+        shell: true,
+        type: 'amphibious',
+        meal: 10,
+        diet: 'berries'
+    };
+    // Here we are using "animal." repeatedly for all the properties
+    const callFeedByPassingAnimal = (animal) => console.log(`Feed ${animal.name} ${animal.meal} kilos of ${animal.diet}`);
+    callFeedByPassingAnimal(turtle);
+
+    // Instead of repeating properties try to have properties in method signature
+    const callFeedByPassingProperties = ({name, meal, diet}) => console.log(`Feed ${name} ${meal} kilos of ${diet}`);
+    callFeedByPassingProperties(turtle);
+
+    // Properties doesn't look good in method signature. Instead we can retreive only properties.
+    const callFeedByPassingAnimalAndThenRetreiveProperties = (animal) => {
+      const { name, meal, diet } = animal;
+      console.log(`Feed ${name} ${meal} kilos of ${diet}`);
+    };
+    callFeedByPassingAnimalAndThenRetreiveProperties(turtle);
+
+    // =======================
+    // Spread Syntax
+    // =======================
+    const pikachu = { name: 'Pikachu' };
+    const stats = { hp: 40, attack: 60, defence: 45 };
+
+    // How to add stats to pikachu?
+    // NOTE: BAD Way
+    pikachu.hp = stats.hp;
+    pikachu.attack = stats.attack;
+    pikachu.defence = stats.defence;
+    console.log(pikachu);
+
+    // NOTE: Decent way is to use Object.assign
+    const newPikachu = Object.assign(pikachu, stats);
+    console.log(newPikachu);
+
+    // NOTE: Awesome way using spread
+    const newPikachuSpread = {...pikachu, ...stats, another: 10};
+    console.log(newPikachuSpread);
+
+    // For Arrays
+    let pokemon = ['Arbok', 'Raichu', 'Sandshrew'];
+    // If you want to add new values
+    // NOTE: BAD way
+    // pokemon.push('One');
+    // pokemon.push('Two');
+
+    // Using spread operator
+    pokemon = [...pokemon, 'One', 'Two'];
+    console.log(pokemon);
+
+    // Also you can unshift positions as,
+    pokemon = [ 'X', ...pokemon, 'Y'];
+    console.log(pokemon);
   </script>
 </body>
 </html>
