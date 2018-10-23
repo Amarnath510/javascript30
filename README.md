@@ -13,7 +13,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-7: More ES6 Array functions
 - [x] Day-8: 2D Canvas
 - [x] Day-9: Dev Tools
-- [ ] Day-10: Hold Shift select
+- [x] Day-10: Hold Shift select
 - [ ] Day-11:
 - [ ] Day-12:
 - [ ] Day-13:
