@@ -14,7 +14,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-8: 2D Canvas
 - [x] Day-9: Dev Tools
 - [x] Day-10: Hold Shift select
-- [ ] Day-11:
+- [x] Day-11: Custom Video Player
 - [ ] Day-12:
 - [ ] Day-13:
 - [ ] Day-14:
