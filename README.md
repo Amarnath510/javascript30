@@ -15,9 +15,9 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-9: Dev Tools
 - [x] Day-10: Hold Shift select
 - [x] Day-11: Custom Video Player
-- [ ] Day-12:
+- [x] Day-12: KONAMI Code
 - [ ] Day-13:
-- [ ] Day-14:
+- [x] Day-14: Arrays & Objects - Reference vs Copy
 - [ ] Day-15:
 - [ ] Day-16:
 - [ ] Day-17:
