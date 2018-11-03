@@ -8,31 +8,53 @@
 
   <script>
     // start with strings, numbers and booleans
+    let age = 20;
+    let another_age = age;
+    console.log(age, another_age); // 20, 20
+
+    age = 30;
+    console.log(age, another_age); // 30 20
+
+    let name = 'amarnath';
+    let another_name = name;
+    console.log(name, another_name);
+
+    name = 'chandana';
+    console.log(name, another_name);
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
+    let team = players;
+    console.log(players, team);
 
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
+    team[3] = 'Lux';
+    console.log(players, team);
 
     // now here is the problem!
-
     // oh no - we have edited the original array too!
-
     // Why? It's because that is an array reference, not an array copy. They both point to the same array!
-
     // So, how do we fix this? We take a copy instead!
 
     // one way
+    const arrayCopyUsingSlice = players.slice();
 
     // or create a new array and concat the old one in
+    const arrayCopyUsingConcat = [].concat(players);
+
+    // or use Array.from
+    const arrayUsingArrayFrom = Array.from(players);
 
     // or use the new ES6 Spread
+    const arrayCopyUsingSpread = [...players];
 
     // now when we update it, the original one isn't changed
+    arrayCopyUsingSpread[3] = 'amar';
+    console.log(arrayCopyUsingSpread, players);
 
     // The same thing goes for objects, let's say we have a person object
 
@@ -43,12 +65,20 @@
     };
 
     // and think we make a copy:
+    const anotherPerson = person;
+    person.age = 90; // both will change
+    console.log(person, anotherPerson);
 
     // how do we take a copy instead?
+    const copyOfPerson = Object.assign({}, person);  // This only works for one level
+    copyOfPerson.age = 100;
+    console.log(person, copyOfPerson);
 
     // We will hopefully soon see the object ...spread
-
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+    const deepCopyUsingJSON = JSON.parse(JSON.stringify(person)); // Costly operation. First converts to string and then the string is parsed to JSON.
+    deepCopyUsingJSON.age = 60;
+    console.log(person, deepCopyUsingJSON);
 
   </script>
 
