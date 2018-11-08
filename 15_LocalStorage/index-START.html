@@ -26,13 +26,65 @@
   </div>
 
 <script>
+  // localStorage.removeItem('items');
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
-  const items = [];
+  console.log(localStorage.getItem('items'));
+  console.log(JSON.parse(localStorage.getItem('items')));
+  const items = JSON.parse(localStorage.getItem('items')) || [];
 
+  function populateItems(list = [], htmlList) {
+    const finalList = list.map((item, i) => {
+      return `
+        <li>
+          <input type="checkbox" id="item${i}" data-index="${i}" ${item.done ? 'checked' : ''}/>
+          <label for="item${i}">${item.text}</label>
+        </li>
+      `;
+    }).join('');
+    htmlList.innerHTML = finalList;
+  }
+
+  function saveList(list) {
+    localStorage.setItem('items', JSON.stringify(list));
+  }
+
+  function addItem(e) {
+    e.preventDefault();
+    const text = (this.querySelector('[name=item]')).value;
+    const item = {
+      text: text,
+      done: false
+    };
+    this.reset();
+    items.push(item);
+    populateItems(items, itemsList);
+    saveList(items);
+  }
+
+  function toggleItem(e) {
+    if (!e.target.matches('input')) {
+      return;
+    }
+
+    const el = e.target;
+    const index = el.dataset.index;
+    items[index].done = !items[index].done;
+    saveList(items);
+    populateItems(items, itemsList);
+  }
+
+  addItems.addEventListener('submit', addItem);
+
+  // Let's add eventLister to each checkbox so that we can persist the checked value.
+  // If we use querySelector then it does not work because more items
+  // can be added dynamically for which querySelector does not work.
+  // Instead let's add to "ul" itself. So if any any of the "li" item is clicked then it is delegated to its parent "ul".
+  itemsList.addEventListener('click', toggleItem);
+
+  populateItems(items, itemsList);
 </script>
 
 
 </body>
 </html>
-
