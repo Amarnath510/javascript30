@@ -18,7 +18,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-12: KONAMI Code
 - [ ] Day-13:
 - [x] Day-14: Arrays & Objects - Reference vs Copy
-- [ ] Day-15:
+- [x] Day-15: Local Storage & Event Delegation
 - [ ] Day-16:
 - [ ] Day-17:
 - [ ] Day-18:
