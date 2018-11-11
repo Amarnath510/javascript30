@@ -21,7 +21,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-15: Local Storage & Event Delegation
 - [x] Day-16: Mouse Shadow
 - [x] Day-17: Sort without Articles
-- [ ] Day-18:
+- [x] Day-18: Adding up Times with Reduce
 - [ ] Day-19:
 - [ ] Day-20:
 - [ ] Day-21:
