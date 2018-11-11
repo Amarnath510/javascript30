@@ -23,7 +23,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-17: Sort without Articles
 - [x] Day-18: Adding up Times with Reduce
 - [ ] Day-19:
-- [ ] Day-20:
+- [x] Day-20: Speech Detection
 - [ ] Day-21:
 - [ ] Day-22:
 - [ ] Day-23:
@@ -40,3 +40,6 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - To Enable autosuggest for JavaScript browser (HTML) features like document.(some-method) using TernJS we need to do the following,
   - First you need to be open a JS file. It won't work if you are in HTML file
   - Atom -> Toolbar -> packages -> Atom TernJS -> Configure Project -> "libs" section, check "browser" -> save & restart server
+- To start tasks that have "package.json" do,
+  - npm install
+  - npm start
