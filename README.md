@@ -37,4 +37,6 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
 ## Reference
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D (Canvas Doc)
-- To Enable autosuggest for document.<something> you need to enable TernJS "browser". Toolbar -> packages -> About TernJS -> Configure Project -> "libs" section, check "browser" -> save & restart server
+- To Enable autosuggest for JavaScript browser (HTML) features like document.(some-method) using TernJS we need to do the following,
+  - First you need to be open a JS file. It won't work if you are in HTML file
+  - Atom -> Toolbar -> packages -> Atom TernJS -> Configure Project -> "libs" section, check "browser" -> save & restart server
