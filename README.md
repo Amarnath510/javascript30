@@ -19,7 +19,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [ ] Day-13:
 - [x] Day-14: Arrays & Objects - Reference vs Copy
 - [x] Day-15: Local Storage & Event Delegation
-- [ ] Day-16:
+- [x] Day-16: Mouse Shadow
 - [ ] Day-17:
 - [ ] Day-18:
 - [ ] Day-19:
