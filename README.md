@@ -24,8 +24,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-18: Adding up Times with Reduce
 - [ ] Day-19:
 - [x] Day-20: Speech Detection
-- [ ] Day-21:
-- [ ] Day-22:
+- [x] Day-21: Geolocation
+- [x] Day-22: Follow Link Highlighter
 - [ ] Day-23:
 - [ ] Day-24:
 - [ ] Day-25:
@@ -43,3 +43,4 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - To start tasks that have "package.json" do,
   - npm install
   - npm start
+- Use `this.getBoundingClientRect()` to get the current link position on hover.
