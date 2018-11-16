@@ -26,7 +26,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-20: Speech Detection
 - [x] Day-21: Geolocation
 - [x] Day-22: Follow Link Highlighter
-- [ ] Day-23:
+- [x] Day-23: Speech Synthesis
 - [ ] Day-24:
 - [ ] Day-25:
 - [ ] Day-26:
