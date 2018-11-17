@@ -27,7 +27,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-21: Geolocation
 - [x] Day-22: Follow Link Highlighter
 - [x] Day-23: Speech Synthesis
-- [ ] Day-24:
+- [x] Day-24: Fixed Nav
 - [ ] Day-25:
 - [ ] Day-26:
 - [ ] Day-27:
