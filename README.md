@@ -31,8 +31,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-25: Event Bubbling
 - [x] Day-26: Stripe Follow along dropdown
 - [x] Day-27: Click and Drag
-- [ ] Day-28:
-- [ ] Day-29:
+- [x] Day-28: Video Speed Controller
+- [x] Day-29: Countdown Clock
 - [ ] Day-30:
 
 ## Reference
