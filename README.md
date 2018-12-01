@@ -15,13 +15,13 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-10: Hold Shift select
 - [x] Day-11: Custom Video Player
 - [x] Day-12: KONAMI Code
-- [x] Day-13: Slide in a scroll (N/A)
+- [ ] Day-13: Slide in a scroll (N/A)
 - [x] Day-14: Arrays & Objects - Reference vs Copy
 - [x] Day-15: Local Storage & Event Delegation
 - [x] Day-16: Mouse Shadow
 - [x] Day-17: Sort without Articles
 - [x] Day-18: Adding up Times with Reduce
-- [x] Day-19: Webcam fun (N/A)
+- [ ] Day-19: Webcam fun (N/A)
 - [x] Day-20: Speech Detection
 - [x] Day-21: Geolocation
 - [x] Day-22: Follow Link Highlighter
