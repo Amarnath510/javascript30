@@ -67,3 +67,10 @@ h1 {
 .hole.up .mole {
   top: 0;
 }
+
+.timer {
+  text-align: center;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-top: 5rem;
+}

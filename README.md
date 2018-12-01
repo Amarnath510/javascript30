@@ -2,7 +2,6 @@
 
 Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
-
 ## Progress
 - [x] Day-1: Awesome Drum Kit
 - [x] Day-2: Super Cool Clock
@@ -16,13 +15,13 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-10: Hold Shift select
 - [x] Day-11: Custom Video Player
 - [x] Day-12: KONAMI Code
-- [ ] Day-13:
+- [x] Day-13: Slide in a scroll (N/A)
 - [x] Day-14: Arrays & Objects - Reference vs Copy
 - [x] Day-15: Local Storage & Event Delegation
 - [x] Day-16: Mouse Shadow
 - [x] Day-17: Sort without Articles
 - [x] Day-18: Adding up Times with Reduce
-- [ ] Day-19:
+- [x] Day-19: Webcam fun (N/A)
 - [x] Day-20: Speech Detection
 - [x] Day-21: Geolocation
 - [x] Day-22: Follow Link Highlighter
@@ -33,7 +32,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-27: Click and Drag
 - [x] Day-28: Video Speed Controller
 - [x] Day-29: Countdown Clock
-- [ ] Day-30:
+- [x] Day-30: Whack A Mole
 
 ## Reference
 - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D (Canvas Doc)
