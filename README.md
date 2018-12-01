@@ -28,8 +28,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-22: Follow Link Highlighter
 - [x] Day-23: Speech Synthesis
 - [x] Day-24: Fixed Nav
-- [ ] Day-25:
-- [ ] Day-26:
+- [x] Day-25: Event Bubbling
+- [x] Day-26: Stripe Follow along dropdown
 - [ ] Day-27:
 - [ ] Day-28:
 - [ ] Day-29:
