@@ -30,7 +30,7 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - [x] Day-24: Fixed Nav
 - [x] Day-25: Event Bubbling
 - [x] Day-26: Stripe Follow along dropdown
-- [ ] Day-27:
+- [x] Day-27: Click and Drag
 - [ ] Day-28:
 - [ ] Day-29:
 - [ ] Day-30:
@@ -43,4 +43,4 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 - To start tasks that have "package.json" do,
   - npm install
   - npm start
-- Use `this.getBoundingClientRect()` to get the current link position on hover.
+- Use `element.getBoundingClientRect()` to get element position coordinates(width, height, top, left etc).
